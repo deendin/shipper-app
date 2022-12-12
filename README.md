@@ -4,8 +4,8 @@
 
 At a minimum this solution has two different parts:
 
-1. The Frontend
-2. The Backend
+- [x] The Frontend
+- [x] The Backend
 
 1. The Frontend: This is a simple vuejs application that:
   - Renders the list of all shippers
