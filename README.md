@@ -1,4 +1,4 @@
-# An application to manage shippers, create new shipper, update an existing shipper and keeps track of a shippers primary contact and allows updating of an existing shipperall of it's contacts.
+# An application to manage Shippers and it's Contacts..
 ## What does this solution do?
 
 At a minimum this solution has two different parts:
