@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "4af5f713-3de3-4b8b-a262-b2ef8fd66f42",
+		"name": "SHIPPERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13891745"
+	},
+	"item": [
+		{
+			"name": "GET SHIPPERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://server.test/api/shippers/index",
+					"protocol": "http",
+					"host": [
+						"server",
+						"test"
+					],
+					"path": [
+						"api",
+						"shippers",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW SHIPPER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://server.test/api/shippers/b9d3ba4f-2b78-4f81-89d5-eca8dd59af4e/show",
+					"protocol": "http",
+					"host": [
+						"server",
+						"test"
+					],
+					"path": [
+						"api",
+						"shippers",
+						"b9d3ba4f-2b78-4f81-89d5-eca8dd59af4e",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE SHIPPER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "company_name",
+							"value": "Boher Inc",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "33, Aris Road Bestik China.",
+							"type": "text"
+						},
+						{
+							"key": "contact[name]",
+							"value": "Lola Sobo",
+							"type": "text"
+						},
+						{
+							"key": "contact[contact_number]",
+							"value": "+81 23893 02",
+							"type": "text"
+						},
+						{
+							"key": "contact[cold]",
+							"value": "Shola",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://server.test/api/shippers/create",
+					"protocol": "http",
+					"host": [
+						"server",
+						"test"
+					],
+					"path": [
+						"api",
+						"shippers",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE SHIPPER",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "company_name",
+							"value": "Lamba Luru",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Victoria Island, Lagos.",
+							"type": "text"
+						},
+						{
+							"key": "contact[name]",
+							"value": "Tijanja",
+							"type": "text"
+						},
+						{
+							"key": "contact[contact_number]",
+							"value": "08029338821",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://server.test/api/shippers/b9d3ba4f-2b78-4f81-89d5-eca8dd59af4e/update",
+					"protocol": "http",
+					"host": [
+						"server",
+						"test"
+					],
+					"path": [
+						"api",
+						"shippers",
+						"b9d3ba4f-2b78-4f81-89d5-eca8dd59af4e",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
