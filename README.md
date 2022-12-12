@@ -1,4 +1,5 @@
 # An application to manage Shippers and it's Contacts..
+
 ## What does this solution do?
 
 At a minimum this solution has two different parts:
@@ -51,7 +52,7 @@ Before setting up this repository, the following are the dependencies that needs
 3. `cd` into `server` directory. This is the directory where the backend logic resides. 
 4. When in the `server` directory you can run `composer install` to install the project dependencies. When that is done, run  `php artisan migrate --seed` to create the tables and it's seeders.
 5. In the server you can either run `php artisan serve` to start the laravel app or if you have valet setup, you can run `valet link` in this directory and then head to `http://server.test` to see the backend running.
-6. To test, run `php artisan test`, which is expected to run this tests or continue to the next step which describes how to setup the frontend so that these endpoints from the backend can be tested.
+6. To test, duplicate the contnet of the `.env.test.example` to a new `.env.tesing` file, run `php artisan test`, which is expected to run this tests or continue to the next step which describes how to setup the frontend so that these endpoints from the backend can be tested.
 
 
 ## Setup & Instruction for the backend:
