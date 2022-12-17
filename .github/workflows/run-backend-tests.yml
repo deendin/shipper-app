@@ -1,6 +1,6 @@
 name: Tests (PHP)
 
-on: [push]
+on: [push, ]
 
 jobs:
   tests:
@@ -37,7 +37,7 @@ jobs:
         run: | 
           cd server
           php artisan test
-          
+
         env:
           APP_ENV: testing
 
