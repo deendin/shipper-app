@@ -39,7 +39,7 @@ class ShipperStoreTest extends TestCase
         $response = $this->postJson(route('api.shipper.store'), $data)
                     ->assertCreated();
 
-        $response->assertStatus(200);
+        $response->assertStatus(201);
 
         $this->assertEquals('success', $response['status']);
         $this->assertEquals('Shipper created successfully.', $response['message']);
