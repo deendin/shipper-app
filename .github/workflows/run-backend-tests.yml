@@ -37,7 +37,7 @@ jobs:
         run: | 
           cd server
           php artisan test
-          ./vendor/bin/phpunit
+          
         env:
           APP_ENV: testing
 

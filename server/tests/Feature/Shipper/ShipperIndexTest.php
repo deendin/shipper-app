@@ -19,7 +19,7 @@ class ShipperIndexTest extends TestCase
      */
     public function test_shippers_can_be_retrieved()
     {
-        Shipper::factory()->count(4)->create();
+        Shipper::factory()->count(5)->create();
 
         $response = $this->getJson(route('api.shipper.index'));
 
