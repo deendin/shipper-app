@@ -18,7 +18,6 @@ class ShipperStoreTest extends TestCase
      */
     public function test_shipper_can_be_created()
     {
-        $this->withoutExceptionHandling();
         $shipper = Shipper::factory()->create();
 
         $shipper->contacts()->save(Contact::factory()->state(function(array $attributes){
@@ -40,7 +39,7 @@ class ShipperStoreTest extends TestCase
         $response = $this->postJson(route('api.shipper.store'), $data)
                     ->assertCreated();
 
-        $response->assertStatus(201);
+        $response->assertStatus(200);
 
         $this->assertEquals('success', $response['status']);
         $this->assertEquals('Shipper created successfully.', $response['message']);
