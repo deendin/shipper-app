@@ -24,6 +24,7 @@ jobs:
 
       - name: Prepare Laravel Application
         run: |
+          cd server
           cp .env.example .env
           php artisan key:generate
       - name: Cache yarn dependencies
@@ -33,7 +34,9 @@ jobs:
           key: yarn-${{ hashFiles('yarn.lock') }}
 
       - name: Run yarn
-        run: yarn && yarn dev
+        run: |
+          cd server
+          yarn && yarn dev
 
       - name: Run tests
         run: | 
