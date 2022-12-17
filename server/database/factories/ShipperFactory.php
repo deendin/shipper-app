@@ -18,7 +18,7 @@ class ShipperFactory extends Factory
     {
         return [
             'company_name' => $this->faker->company(),
-            // 'address' => $this->faker->address(),
+            'address' => $this->faker->address(),
         ];
     }
 }
