@@ -18,7 +18,6 @@ class ShipperStoreTest extends TestCase
      */
     public function test_shipper_can_be_created()
     {
-        $this->withoutExceptionHandling();
         $shipper = Shipper::factory()->create();
 
         $shipper->contacts()->save(Contact::factory()->state(function(array $attributes){
